@@ -1,0 +1,211 @@
+.grid-layout {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  gap: 15px; }
+
+header {
+  width: 1200px;
+  height: auto;
+  background-color: #d4eaff;
+  border-radius: 10px; }
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0; }
+
+header ul .logo {
+  width: 25%;
+  height: 131px;
+  background: url("../images/Asset+2.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+header ul li button {
+  font-family: open-sans, sans-serif;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  background-color: #36a4dc;
+  font-size: 20px;
+  list-style: none;
+  border: none;
+  border-radius: 5px;
+  outline: 0;
+  height: 40px;
+  margin-left: -185px; }
+
+header ul li button span {
+  color: #36a4dc; }
+
+header ul .contact .fas {
+  color: red;
+  font-size: 40px;
+  margin-right: 5px; }
+
+header ul span {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: open-sans, sans-serif;
+  color: #474848; }
+
+main {
+  background-color: #d4eaff;
+  width: 1200px;
+  min-height: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px; }
+
+main .dashboard {
+  font-size: 50px;
+  font-family: open-sans, sans-serif;
+  letter-spacing: 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  right: -470px;
+  text-align: center;
+  color: #474848; }
+
+main div {
+  background-color: #36a4dc;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px white solid;
+  -webkit-box-shadow: #f99d1b 1px 1px 10px -4px;
+          box-shadow: #f99d1b 1px 1px 10px -4px; }
+
+main div .hidden-card-content {
+  display: none;
+  z-index: 1; }
+
+main div .showMore,
+.showLess {
+  border-radius: 3px;
+  outline: 0;
+  border: none;
+  cursor: pointer; }
+
+main div .card-button {
+  position: relative;
+  left: 166px;
+  border-radius: 50%;
+  outline: 0;
+  border: none;
+  cursor: pointer; }
+
+.modal #modal-form {
+  padding: 40px;
+  font-family: open-sans, sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 600px;
+  background-color: #d4eaff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: white 1px solid;
+  display: none;
+  z-index: 150;
+  color: #474848;
+  font-weight: 600; }
+
+.modal .control {
+  text-align: center; }
+
+.modal #doctor-select {
+  width: 200px;
+  height: 25px; }
+
+.modal .comment {
+  width: 300px;
+  height: 50px; }
+
+.modal textarea {
+  width: 80%; }
+
+.modal .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+#gray {
+  position: fixed;
+  background-color: rgba(1, 1, 1, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 100;
+  display: none; }
+
+.modal input {
+  width: 390px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+
+.modal input:hover {
+  background-color: whitesmoke; }
+
+.modal .modal-buttons button {
+  width: 70px;
+  outline: none; }
+
+.modal #date {
+  font-weight: 600; }
+
+footer #tabs {
+  width: 1200px;
+  background-color: #d4eaff;
+  border-radius: 10px; }
+
+footer #tabs ul {
+  border-radius: 10px; }
+
+footer #tabs li {
+  border-radius: 5px; }
+
+/*# sourceMappingURL=style.css.map */
