@@ -92,8 +92,6 @@ class DOCTOR_VISIT {
         const { title, fields } = DOCTOR_VISIT.Doctors().find(
             item => item.id === doctor_type
         );
-        console.log(title);
-        console.log(fields);
         card.innerHTML =
             `<strong>${title}</strong><button id = "close" class="card-button">x</button>` +
             fields
