@@ -1,8 +1,8 @@
 {
-  "name": "calendar",
+  "name": "doctorvisit",
   "version": "1.0.0",
-  "description": "Create a CSS calendar using Scss",
-  "main": "index.js",
+  "description": "doctor visits cards",
+  "main": "main.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
