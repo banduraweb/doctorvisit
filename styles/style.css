@@ -6,6 +6,9 @@
   justify-items: center;
   gap: 15px; }
 
+a {
+  text-decoration: none; }
+
 header {
   width: 1200px;
   height: auto;

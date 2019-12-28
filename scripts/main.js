@@ -1,33 +1,10 @@
-// renderFromLocal();
-//     function renderFromLocal() {
-//        // debugger;
-//         console.log(document.querySelector("body").outerHTML);
-//
-//         document.querySelector("body").innerHTML = localStorage.getItem("htmlContent");
-//         closeCard();
-//         showFullCard();
-//         showSmallCard();
-//         $(function () {
-//             $("main div").draggable();
-//         });
-//
-//     }
-//     window.onbeforeunload = function () {
-//
-//         let htmlContent = document.querySelector("body").innerHTML;
-//         localStorage.setItem("htmlContent", htmlContent);
-//        // renderFromLocal();
-//     };
-
 
 const doctors = document.getElementById("doctor-select");
-console.log(doctors);
 const date = document.getElementById("date");
 const today = new Date();
 const main = document.getElementsByTagName("main")[0];
 const btn = document.getElementById("ok-btn");
-let arr1 = [];
-let obj = {};
+let params = {};
 let doctor_type = null;
 buildDoctorsList();
 
@@ -105,10 +82,10 @@ function visitCardCreate(event) {
         }
 
         let inp = document.querySelectorAll(".dynamic-inputs");
-        inp.forEach(item => (obj[item.id] = item.value));
-        arr1.push(obj);
+        inp.forEach(item => (params[item.id] = item.value));
 
-        let newCard = DOCTOR_VISIT.createVisit(doctor_type, obj);
+
+        let newCard = DOCTOR_VISIT.createVisit(doctor_type, params);
         newCard.renderAllContent();
 
         $(function () {
@@ -118,7 +95,7 @@ function visitCardCreate(event) {
         closeCard();
         showFullCard();
         showSmallCard();
-        //  console.log(arr1);
+
     } catch (err) {
         alert(err.message);
     }
@@ -134,7 +111,9 @@ function closeCard() {
         }
 
         function removeVisitCard() {
-            document.querySelectorAll('main div').length === 1 ? document.getElementsByClassName('dashboard')[0].style.display = 'block' : 0;
+            document.querySelectorAll('main div').length === 1
+              ? document.getElementsByClassName('dashboard')[0].style.display = 'block'
+              : 0;
             this.parentNode.remove();
         }
     }
@@ -193,9 +172,3 @@ function ModalException(error) {
         this.stack = (new Error()).stack;
     }
 }
-
-// window.onbeforeunload = function () {
-//     let htmlContent = document.querySelector("body").innerHTML;
-//     localStorage.setItem("htmlContent", htmlContent);
-//     renderFromLocal();
-// };
