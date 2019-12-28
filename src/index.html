@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+
+
+</head>
+
+<body>
+
+<div class="grid-layout">
+
+    <header>
+        <ul>
+            <li class="logo"></li>
+            <li>
+                <button id="applyBtn"><i class="fas fa-angle-double-right"></i>Apply visit</button>
+            </li>
+            <li class="contact"><i class="fas fa-phone-square"></i><span>3333</span>
+            </li>
+        </ul>
+    </header>
+    <div id="gray"></div>
+    <section class="modal">
+        <form action="" id="modal-form">
+            <div id="date"></div>
+            <div class="field" id="first-field">
+                <label class="label">Choose Doctor</label>
+                <div class="control">
+                    <select class="inputs-value" id="doctor-select" name="visitname" required>
+                    </select>
+                </div>
+            </div>
+            <div class="field" id="field-for-doctors"></div>
+            <label class="label">Comment</label>
+            <div class="comment">
+                <textarea class="textarea" name="commentary" placeholder="Comment about the visit" maxlength="400"></textarea>
+            </div>
+            <div class="modal-buttons">
+                <button type="button" id="ok-btn">OK</button>
+                <button type="button" id="cancel-btn">CANCEL</button>
+            </div>
+        </form>
+    </section>
+    <main>
+                <h1 class="dashboard">No items have been added</h1>
+    </main>
+
+    <footer>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Кардіологія</a></li>
+                <li><a href="#tabs-2">Стоматологія</a></li>
+                <li><a href="#tabs-3">Терепевт</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Кардиология изучает такие патологические состояния, как ишемическая болезнь сердца (ИБС), гипертоническая болезнь, врождённые пороки сердца, приобретённые пороки сердца, цереброваскулярные заболевания и другие. Сегодня доля кардиологической патологии в структуре смертности населения развитых стран составляет 40-60 %, при этом продолжающийся рост заболеваемости и поражение людей всё более молодого возраста, что делает сердечно-сосудистые заболевания важнейшей медико-социальной проблемой здравоохранения.
+
+                    История кардиологии, как и история медицины в целом, насчитывает не одну тысячу лет. С древности работа сердца и сосудов была загадкой, разгадывание которой происходило постепенно, на протяжении многих веков.</p>
+            </div>
+            <div id="tabs-2">
+                <p>Стоматоло́гия (от др.-греч. στόμα — «рот» + λογος — «наука») — раздел медицины, занимающийся изучением зубов, их строения и функционирования, их заболеваний, методов их профилактики и лечения, а также болезней полости рта, челюстей и пограничных областей лица и шеи[1]. Стоматолога часто называют дантист (от фр. dentiste), хотя понятие дантист включает в себя не только стоматологов, но также и зубных врачей, зубных фельдшеров и зубных техников.
+
+                    Стоматология — наука, изучающая строение, функции, норму и патологию полости рта и челюстно-лицевой области.
+
+                    Стоматологическая наука — это комплексный подход к исследованию, выявлению и лечению стоматологических заболеваний, которые стоят за гранью медицинской нормы и запускают целый комплекс патологический состояний </p>
+            </div>
+            <div id="tabs-3">
+                <p>Пани́ческая ата́ка — необъяснимый, мучительный для больного приступ тяжёлой тревоги, сопровождаемый беспричинным страхом, в сочетании с различными вегетативными (соматическими) симптомами.
+
+                    Некоторые русскоязычные врачи используют устаревшие, отсутствующие в МКБ термины «вегетативный криз», «симпатоадреналовый криз», «кардионевроз», «ВСД (вегетососудистая дистония) с кризовым течением», «НЦД (нейроциркуляторная дистония)», отражающие представления о нарушениях вегетативной нервной системы в зависимости от ведущего симптома. «Паническое расстройство» (эпизодическая пароксизмальная тревожность), в свою очередь, как самостоятельное заболевание имеет мировое признание и введено в Международную классификацию болезней 10-го пересмотра</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="scripts/structure.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
